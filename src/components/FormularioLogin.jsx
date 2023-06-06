@@ -48,7 +48,7 @@ export default function FormularioLogin() {
             })
             
         
-        },2000)
+        },1000)
        
     }
 
@@ -66,11 +66,11 @@ export default function FormularioLogin() {
                
                 {
                     !loading ?
-                        <input data-test="login-btn" type="submit" name="button" id="button" placeholder="Enviar"/>
+                        <input data-test="login-btn" type="submit" name="button" id="button" placeholder="Enviar" color="#52B6FF"/>
                         :
                         <Loading>
                         
-                            <input data-test="login-btn" type="submit" name="button" id="button" placeholder="Enviar"/>
+                            <input data-test="login-btn" type="submit" name="button" id="button" placeholder="Enviar" color="#52B6FF"/>
                                 <div>
                                         <RotatingLines
                                     
@@ -109,9 +109,9 @@ position: relative;
 input{
     background-color: #52B6FF;
     position: relative;
-    //margin: 5px 0px 0px 35px;
     bottom:0px;
     left: 3px;
+    color: white;
     
 }
 p{

@@ -1,16 +1,19 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 export default function Navbar() {
     return(
+        <Link to={'/'}>
         <div data-test="header">
             <Nav>  
                 <div>
                     <h1>TrackIt</h1>
                 </div>
                 
-                    <img data-test="avatar" src="https://w7.pngwing.com/pngs/888/686/png-transparent-spongebob-spongebob.png" alt="picture" />
+                <img data-test="avatar" src="https://w7.pngwing.com/pngs/888/686/png-transparent-spongebob-spongebob.png" alt="picture" />
                 
             </Nav>
         </div>
+        </Link>
         
     );
 }
@@ -20,6 +23,7 @@ width: 375px;
 height: 70px;
 background-color: #126BA5;
 position: relative;
+position: fixed;
 
 
 h1{

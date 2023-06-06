@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom"
 export default function FormularioCadastro(props) {
     // eslint-disable-next-line react/prop-types
-const {setEmail, setSenha, setUrlFoto, setUsuario, setDados, dados, email, senha, urlFoto, usuario} = props
+const {setEmail, setSenha, setUrlFoto, setUsuario, setDados, email, senha, urlFoto, usuario} = props
         
 
     function enviarCadastro(event){
@@ -20,8 +20,6 @@ const {setEmail, setSenha, setUrlFoto, setUsuario, setDados, dados, email, senha
         promise.then(resposta => console.log(resposta.data))
         promise.catch( erro => console.log( erro.response.message))
 
-     
-     console.log(dados)
     }
     
     return(

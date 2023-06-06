@@ -31,7 +31,7 @@ display: flex;
 flex-direction: column;
 margin-top: 20px;
 font-family: 'Lexend Deca', sans-serif;
-//font-family: 'Playball', cursive;
+
 
 div{
     display: flex;
